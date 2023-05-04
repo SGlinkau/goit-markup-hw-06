@@ -888,7 +888,7 @@ textarea {
 }
 
 .form-label:hover,
-.form-label:focus,
+.form-label:focus-within,
 .form-label:active {
   outline: none;
   fill: var(--brand-color);
