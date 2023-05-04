@@ -117,6 +117,7 @@ body {
   font-size: 14px;  
   line-height: 1.142;
   letter-spacing: 0.02em; 
+  outline: none;
   
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -169,6 +170,7 @@ body {
   letter-spacing: 0.02em; 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+  outline: none;
 }
 
 .ico-email {
@@ -253,6 +255,7 @@ body {
   border-radius: 4px;
   font-family: "Roboto";
   color: var(--basic-white);
+  outline: none;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -449,6 +452,7 @@ body {
   fill: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 /* =====PORTFOLIO SECTION===== */
@@ -565,6 +569,7 @@ body {
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 /* =====FOOTER SECTION===== */
@@ -752,6 +757,13 @@ body {
   cursor: pointer;
 }
 
+.close-btn:hover,
+.close-btn:hover{
+  outline: none;
+  border: 1px solid rgba(255, 0, 0, 0.733);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -798,9 +810,14 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
 }
 
-.form-input-imie {
+.form-input:hover{
+  fill: #2196F3;
+}
+
+/* .form-input-imie {
   background-image: url("../images/chopek.svg");
   background-position: 11px 12px;
   background-size: 12px 12px;
@@ -822,7 +839,7 @@ body {
   background-size: 15px 12px;
   background-repeat: no-repeat;
   padding-left: 42px;
-}
+} */
 
 textarea {
   height: 120px;
@@ -853,6 +870,7 @@ textarea {
 }
 
 .form-label {
+  position: relative;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -861,6 +879,20 @@ textarea {
   letter-spacing: 0.01em;
 
   color: var(--secondary-text-color);
+}
+
+.form-label-icon{
+  position: absolute;
+  right: 421px;
+  top: 32px;
+}
+
+.form-label:hover,
+.form-label:focus,
+.form-label:active {
+  outline: none;
+  fill: var(--brand-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .form-textarea::placeholder {
@@ -1012,7 +1044,6 @@ textarea {
 }
 
 .footer-input-email::placeholder {
-  padding-left: 16px;
 
   font-family: Roboto;
   font-style: normal;
@@ -1056,6 +1087,10 @@ textarea {
 
 .Submit-ico {
   margin-left: 24px;
+}
+
+.footer-input-email{
+  padding-left: 16px;
 }
 
 .footer-input-email:hover,

@@ -250,6 +250,44 @@
             <h4>Zostaw swoje dane w formularzu poniżej</h4>
             <div class="form-inputs">
                 <label class="form-label">
+                  <svg class="form-label-icon" width="12px" height="12px"><use href="images/sprite.svg#chopek"></use></svg>
+                    <span class="label-text">Imie</span>
+                    <input type="text" class="form-input form-input-imie" name="Imie rejestrowanego użytkownika" placeholder=""/>
+                </label>
+                <label class="form-label">
+                  <svg class="form-label-icon" width="13px" height="13px"><use href="images/sprite.svg#tele"></use></svg>
+                    <span class="label-text">Telefon</span>
+                    <input type="text" class="form-input form-input-telefon" name="Telefon kontaktowy" placeholder=""/>
+                </label>
+                <label class="form-label">
+                  <svg class="form-label-icon" width="15px" height="12px"><use href="images/sprite.svg#mail"></use></svg>
+                    <span class="label-text">Email</span>
+                    <input type="email" class="form-input form-input-email" name="Adres e-mail" placeholder=""/>
+                </label>
+                <label class="form-label">
+                    <span class="label-text">Komentarz</span>
+                    <textarea class="form-textarea" rows="5" style="resize: none;" name="Pole na wprowadzenie komentarza" placeholder="Wprowadź tekst"></textarea>
+                </label>
+            </div>
+            <div class="form-checkbox">
+                <label class="checkbox">
+                    <input type="checkbox" class="form-input-zgoda" name="Zgoda"/><span class="checkbox-text">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></span>
+                </label>
+            </div>
+                <button class="form_button" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>x</button>
+      <div class="form">
+        <form name="form_for_offer" novalidate>
+            <h4>Zostaw swoje dane w formularzu poniżej</h4>
+            <div class="form-inputs">
+                <label class="form-label">
                     <span class="label-text">Imie</span>
                     <input type="text" class="form-input form-input-imie" name="Imie rejestrowanego użytkownika" placeholder=""/>
                 </label>
@@ -275,7 +313,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="./js/modal.js"></script>
 </body>
